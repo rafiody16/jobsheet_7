@@ -30,6 +30,15 @@ public class DoWhileCuti22 {
                     System.out.println("Sisa jatah cuti tidak mencukupi!");
                 }
             }
+            else if (konfirmasi.equalsIgnoreCase("t"))
+            {
+                System.out.println("Program Keluar");
+                break;
+            }
+            else
+            {
+                System.out.println("Inputan tidak valid! Silahkan input (y/t)");
+            }
         } while (jatahCuti > 0);
     }
     
