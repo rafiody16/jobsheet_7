@@ -16,6 +16,7 @@ public class WhileGaji22 {
 
         while (i < jumlahKaryawan)
         {
+    
             System.out.println("Pilihan jabatan - Direktur, Manajer, Karyawan");
             System.out.print("Masukan jabatan karyawan ke-" + (i+1) + ": ");
             jabatan = scan.next();
@@ -35,8 +36,15 @@ public class WhileGaji22 {
             {
                 gajiLembur = jumlahJamLembur * 75000;
             }
+            else
+            {
+                System.out.println("Jabatan Invalid");
+                i--;
+                continue;
+            }
 
             totalGajiLembur += gajiLembur;
+
         }
 
         System.out.println("Total Gaji Lembur: " + totalGajiLembur);
